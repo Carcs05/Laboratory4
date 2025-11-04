@@ -44,7 +44,6 @@ export default function BudgetTrackerScreen() {
   return (
     <View style={styles.container}>
 
-      {/* Balance Box */}
       <View style={styles.centerBox}>
         <Text style={styles.balanceText}>₱{balance.toFixed(2)}</Text>
         <Text style={styles.subText}>Current Balance</Text>
@@ -55,7 +54,6 @@ export default function BudgetTrackerScreen() {
           </Text>
         )}
 
-        {/* Add Balance */}
         <Text style={styles.label}>Add Balance</Text>
         <View style={styles.inputContainer}>
           <TextInput
@@ -70,7 +68,6 @@ export default function BudgetTrackerScreen() {
           </TouchableOpacity>
         </View>
 
-        {/* Expense Description (Moved above Add Expense) */}
         <Text style={styles.label}>Expense Description</Text>
         <View style={styles.inputContainer}>
           <TextInput
@@ -81,7 +78,6 @@ export default function BudgetTrackerScreen() {
           />
         </View>
 
-        {/* Add Expense */}
         <Text style={styles.label}>Add Expense</Text>
         <View style={styles.inputContainer}>
           <TextInput
@@ -100,7 +96,6 @@ export default function BudgetTrackerScreen() {
         </View>
       </View>
 
-      {/* Expense History */}
       <Text style={styles.historyTitle}>Expense History</Text>
       <ScrollView style={styles.historyContainer}>
         {history.length === 0 ? (
